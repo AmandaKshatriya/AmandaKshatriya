@@ -1,0 +1,156 @@
+body{
+    background-image: url(bandbgbg.png);
+    background-repeat: no-repeat;
+    background-size: 1440px,1981px;
+}
+
+.back{
+    position: absolute;
+    transform: rotate(180deg);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.head{
+    color: white;
+    font-weight: 90px;
+    font-size: 120px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+.cdsound{
+    position: absolute;
+    margin-top: -170px ;
+    margin-left: 930px;
+}
+.rotate {
+   
+    width:"150px";
+    height:"150px";
+    animation: rotation infinite 7s linear;
+  }
+  
+  @keyframes rotation{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
+.play1{
+    position: absolute;
+    margin-left: 320px;
+   }
+
+   .band1{
+       position: absolute;
+       margin-top: -5px;
+   }
+  .oneband{
+      margin-left: 70px;
+       }
+
+.play2{
+        position: absolute;
+        margin-left: 320px;
+    }
+    .band2{
+        position: absolute;
+        margin-top: -5px;
+    }
+    .twoband{
+        margin-left: 70px;
+        }
+ 
+.play3{
+    position: absolute;
+    margin-left: 320px;
+ }
+ .band3{
+    position: absolute;
+    margin-top: -5px;
+}
+ .threeband{
+     margin-left: 70px;
+}
+.play4{
+    position: absolute;
+    margin-left: 320px;
+ }
+ .band4{
+    position: absolute;
+    margin-top: -5px;
+}
+ .fourband{
+     margin-left: 70px;
+}
+.play5{
+    position: absolute;
+    margin-left: 320px;
+ }
+ .band5{
+    position: absolute;
+    margin-top: -5px;
+}
+ .fiveband{
+     margin-left: 70px;
+}
+     
+.band1a{
+      position: absolute;
+      margin-top: 40px;
+      margin-left: 40px;
+}
+.name1{
+    margin-left: 350px;
+    margin-top: 150px;
+}
+
+.line1{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -280px;
+}
+.line2{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -280px;
+}
+
+.forward1{
+    position: absolute;
+    transform: rotate(180deg);
+    margin-top: 60px;
+    margin-left: -110px;
+}
+.pause{
+    position: absolute;
+    margin-left: -70px ;
+    margin-top: 60px;
+}
+.forward2{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: -30px;
+}
+
+/* Style buttons */
+.btn {
+    background-color: rgb(2, 2, 2);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 220px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+/*font-family: 'Roboto', sans-serif;*/

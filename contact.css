@@ -1,0 +1,102 @@
+	body{
+  background-image: url(contactbgbg.png);
+	background-repeat: no-repeat;
+	background-size: 1440px,1024px;
+}
+
+
+/* Add no background color to the top navigation */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left; 
+  	margin-left: 150px;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover:not(.active) {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 190px;
+  font-family: 'Roboto', sans-serif;
+  transform: rotate(-90deg);
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 15px;
+  color: rgb(248, 244, 244);
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #fcfcfc;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #b0eb52;
+  text-decoration: underline;
+}
+
+.cd{
+  margin-top: 10px;
+  position: absolute;
+  margin-left: 500px;
+  width: 200px;
+  height: 200px;
+}
+
+.rotate{
+  animation: rotation infinite 7s linear;
+}
+
+@keyframes rotation {
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.album{
+  position: absolute;
+  margin-left: 250px;
+}

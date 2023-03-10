@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Explore</title>
+	<link href="C:\wamp64\www\final\explore.css" rel="stylesheet" type="text/css" >
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+	  <a href="C:\wamp64\www\final\main.html">Playlist</a>
+	  <a href="C:\wamp64\www\final\nowplaying.html">Now Playing</a>
+	  <a href="C:\wamp64\www\final\contact.html">Contact us</a>
+	  <a href="http://web/newlogin.php">Admin Login</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	  <a href="#"><img src="C:\wamp64\www\final\logo.jpeg" width="100px" height="100px"></a>
+    	<i class="fa fa-bars"></i>
+	  </a>
+	</div>
+	
+  <ul class="breadcrumb">
+    <li><a href="C:\wamp64\www\final\g.html">Gallery</a></li>
+    <li><a href="C:\wamp64\www\final\explore.html">Explore</a></li>
+    
+  </ul>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  margin-left: 90px;
+  margin-right: 90px;
+
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+ color: white;
+ 	font-family: 'Roboto', sans-serif;
+   font-size: large;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+
+
+<div class="container">
+  <div class="mySlides">
+    <img src="rockon.png" style="width:97%">
+    SINBAD THE SAILOR by Farhan Akhtar
+    <audio controls autoplay muted>
+  	<source src="sinbad.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  </div>
+
+  <div class="mySlides">
+    <img src="bsb.png" style="width:97%">
+    I WANT IT THAT WAY by Backstreet Boys
+        <audio controls autoplay muted>
+  	<source src="Iwant.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  </div>
+
+  <div class="mySlides">
+    <img src="kishore.png" style="width:97%">
+    MERE MEHBUB by Kishore Kumar
+        <audio controls autoplay muted>
+  	<source src="kishore.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  </div>
+    
+  <div class="mySlides">
+    <img src="rockstar.png" style="width:97%">
+    PHIR SE UDD CHALA by Mohit Chauhan
+        <audio controls autoplay muted>
+  	<source src="phir.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  </div>
+
+  <div class="mySlides">
+    <img src="rdb.png" style="width:97%">
+    KHALBALI by AR Rahman
+        <audio controls autoplay muted>
+  	<source src="khalbali.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  </div>
+    
+  <div class="mySlides">
+    <img src="sanam.png" style="width:97%">
+    LIKHE JO KHAT TUJHE by Sanam
+        <audio controls autoplay muted>
+  	<source src="sanam.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="rockon.png" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="bsb.png" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="kishore.png" style="width: 100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="rockstar.png" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+ 
+           <img class="demo cursor" src="rdb.png" style="width:100%" onclick="currentSlide(5)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="sanam.png" style="width:100%" onclick="currentSlide(6)">
+    </div>
+  </div>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
+
+
+</body>
+</html>
+

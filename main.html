@@ -1,0 +1,249 @@
+<html>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1400px;
+  height: 800px;
+  position: relative;
+  margin-left: 30px;
+  
+  padding-top: 380px;
+}
+
+
+
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-left: 30px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+
+    </head>
+
+    <link href="C:\wamp64\www\final\main.css" rel="stylesheet" type="text/css">
+
+    <body>
+        
+     
+    <div class="topnav" id="myTopnav">
+      <a href="C:\wamp64\www\final\main.html">Playlist</a>
+      <a href="C:\wamp64\www\final\nowplaying.html">Now Playing</a>
+      <a href="C:\wamp64\www\final\contact.html">Contact us</a>
+      <a href="http://web/newlogin.php">Admin Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="#"><img src="C:\wamp64\www\final\logo.jpeg" width="100px" height="100px"></a>
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+
+  
+  <ul class="breadcrumb">
+    <li><a href="C:\wamp64\www\final\g.html">Gallery</a></li>
+    <li><a href="C:\wamp64\www\final\explore.html">Explore</a></li>
+    
+  </ul>
+
+       
+       
+       
+
+         <div class="cd">
+            <img src="C:\wamp64\www\final\bgm-modified.png" class="rotate"  width="500px" height="500px">
+        
+        </div>
+
+       <div class="stan">
+           Stanz Entertainment .
+       </div>
+       <div class="artist">
+           Artist and Sound<br>
+           Management
+       </div>
+       <div class="line">
+           <b>___________________________________________________
+       <div class="line2">
+        <b>________________
+    </div>
+     
+       <div class="forward1">
+        <img src="C:\wamp64\www\final\forward.png"   width="45px" height="45px">
+    
+    </div>
+
+    <div class="pause">
+        <img src="C:\wamp64\www\final\pause-modified.png"   width="45px" height="45px">
+    
+    </div>
+
+    <div class="forward2">
+        <img src="C:\wamp64\www\final\forward.png"   width="45px" height="45px">
+    
+    </div>
+    
+    <div class="alone">
+        "Alone  it's   Music,  Together  it's  Magic!!!"
+    </div>
+
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          
+          <img src="upcoming.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="upcoming2.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="upcoming3.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+   
+   <div class="cdband">
+    <img src="C:\wamp64\www\final\cd.png" class="rotate2"  width="200px" height="200px">
+
+</div>
+
+<div class="bandb">
+    <a href="C:\wamp64\www\final\bandbook.html"><img src="C:\wamp64\www\final\bandb.png"   width="250px" height="250px"></a>
+
+</div>
+
+
+<div class="cdsound">
+    <img src="C:\wamp64\www\final\cd.png"  class="rotate3" width="200px" height="200px">
+
+</div>
+<div class="djb">
+  <a href="C:\wamp64\www\final\soundbook.html"><img src="C:\wamp64\www\final\djb.png"   width="250px" height="250px"></a>
+
+</div>
+
+
+<div class="cdartist">
+    <img src="C:\wamp64\www\final\cd.png"  class="rotate4" width="200px" height="200px">
+
+</div>
+<div class="artistb">
+  <a href="C:\wamp64\www\final\artistbook.html"><img src="C:\wamp64\www\final\artistb.png"   width="250px" height="250px"></a>
+
+</div>
+
+
+
+    </body>
+</html>

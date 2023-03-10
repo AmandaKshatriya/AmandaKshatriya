@@ -1,0 +1,250 @@
+body{
+    background-image: url(Mainbgbg.png);
+    background-repeat: no-repeat;
+    background-size: 1440px,1981px;
+   background-attachment: fixed;
+}
+
+
+
+/* Add no background color to the top navigation */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left; 
+      margin-left: 140px;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover:not(.active) {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 190px;
+  font-family: 'Roboto', sans-serif;
+  transform: rotate(-90deg);
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 15px;
+  color: rgb(248, 244, 244);
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #fcfcfc;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #b0eb52;
+  text-decoration: underline;
+}
+
+
+.cd{
+  margin-top: -65px;
+  margin-left: 110px;
+  position: absolute;
+}
+.rotate {
+ 
+  width:"150px";
+  height:"150px";
+  animation: rotation infinite 7s linear;
+}
+
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.stan{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight:bolder;
+    font-style: italic;
+    margin-left: 700px;
+    margin-top: 240px;
+    background-color: rgb(8, 0, 83);
+    color: white;
+}
+
+.artist{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-left: 710px;
+    margin-top: 310px ;
+    color: white;
+}
+
+.line{
+    position: absolute;
+    color: white;
+    margin-top: 410px;
+    margin-left: 100px;
+    font-size: 30px;
+}
+.line2{
+    position: absolute;
+    color: white;
+    margin-top: -60px;
+    margin-left: px;
+    font-size: 50px;
+}
+
+.forward1{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 460px;
+    transform: rotate(180deg);
+}
+
+
+.pause{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 560px;
+}
+
+.forward2{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 660px;
+    
+}
+
+.alone{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 200px;
+    margin-left: 290px;
+    font-size: 40px;
+    font-weight: lighter;
+    color: white;
+}
+
+.cdband{
+    position: absolute;
+    margin-top: 100px ;
+    margin-left: 160px;
+}
+.rotate2 {
+   
+    width:"150px";
+    height:"150px";
+    animation: rotation infinite 7s linear;
+  }
+  
+  @keyframes rotation{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+.bandb{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.cdsound{
+    position: absolute;
+    margin-top: 100px ;
+    margin-left: 530px;
+}
+.rotate3 {
+   
+    width:"150px";
+    height:"150px";
+    animation: rotation infinite 7s linear;
+  }
+  
+  @keyframes rotation{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  .djb{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 400px;
+}
+
+
+.cdartist{
+    position: absolute;
+    margin-top: 100px ;
+    margin-left: 890px;
+}
+.rotate4 {
+   
+    width:"150px";
+    height:"150px";
+    animation: rotation infinite 7s linear;
+  }
+  
+  @keyframes rotation{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  .artistb{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 760px;
+}

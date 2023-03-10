@@ -1,0 +1,281 @@
+<<html>
+  <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family:  'Roboto', sans-serif;}
+
+/* Style the tab */
+.tab {
+float: left;
+border: 1px solid #ccc;
+background-color: #051537;
+width: 30%;
+height: 400px;
+margin-top: 250px;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+display: block;
+background-color: inherit;
+color: #ffffff;
+padding: 22px 16px;
+width: 100%;
+border: none;
+outline: none;
+text-align: left;
+cursor: pointer;
+transition: 0.3s;
+font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+float: left;
+margin-top: 230px;
+padding: 0px 12px;
+border: 1px solid #ccc;
+width: 70%;
+border-left: none;
+height: 420px;
+color: #ffffff;
+}
+</style>
+
+
+  </head>
+  <link href="C:\wamp64\www\final\artistbook.css" rel="stylesheet" type="text/css">
+ 
+  <body>
+
+      <div class="back">
+          <a href="C:\wamp64\www\final\main.html"><img src="C:\wamp64\www\final\forward.png"   width="45px" height="45px"></a>
+      </div>
+
+      <h2 class="head">Book Artist</h2>
+     
+      <div class="cdsound">
+          <img src="C:\wamp64\www\final\cd.png"  class="rotate" width="500px" height="500px">
+      
+      </div>
+
+
+<div class="tab">
+
+<button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">
+  <div class="play1"><img src="C:\wamp64\www\final\Play-modified.png"   width="40px" height="40px">
+  </div>
+  <div class="band1"><img src="C:\wamp64\www\final\artist1.png"   width="60px" height="60px">
+  </div>
+  <div class="oneband">
+      <b>Chris Albert</b><br>
+      Bollywood,English
+  </div>
+ </button>
+
+
+<button class="tablinks" onclick="openCity(event, 'Paris')">
+  <div class="play2"><img src="C:\wamp64\www\final\Play-modified.png"   width="40px" height="40px">
+  </div>
+  <div class="band2"><img src="C:\wamp64\www\final\artist2.png"   width="60px" height="60px">
+  </div>
+     <div class="twoband">
+      <b>Veronica Maloney</b><br>
+      English,Hindi
+     </div>
+</button>
+
+<button class="tablinks" onclick="openCity(event, 'Tokyo')"> 
+  <div class="play3"><img src="C:\wamp64\www\final\Play-modified.png"   width="40px" height="40px">
+   </div>
+   <div class="band3"><img src="C:\wamp64\www\final\artist3.png"   width="60px" height="60px">
+   </div>
+        <div class="threeband">
+          <b>Kabir & Vicky</b><br>
+          Hindi, English,Goan
+   </div>
+</button>
+
+<button class="tablinks" onclick="openCity(event, 'pune')"> 
+  <div class="play4"><img src="C:\wamp64\www\final\Play-modified.png"   width="40px" height="40px">
+   </div>
+   <div class="band4"><img src="C:\wamp64\www\final\artist4.png"   width="60px" height="60px">
+   </div>
+        <div class="fourband">
+          <b>Sabatian Radu</b><br>
+          English,old Hindi
+   </div>
+</button>
+
+<button class="tablinks" onclick="openCity(event, 'mumbai')"> 
+  <div class="play5"><img src="C:\wamp64\www\final\Play-modified.png"   width="40px" height="40px">
+   </div>
+   <div class="band5"><img src="C:\wamp64\www\final\artist5.png"   width="60px" height="60px">
+   </div>
+        <div class="fiveband">
+          <b>G & G</b><br>
+           Bollywood,English
+   </div>
+</button>
+
+</div>
+
+<div id="London" class="tabcontent">
+<div class="band1a"><img src="C:\wamp64\www\final\artist1.png"   width="260px" height="260px">
+</div>
+  <div class="name1"><h1>Chris Albert</h1>
+       <p>Bollywood,English <br>
+      Just the way you are<br>
+      Everything I do<br>
+      Kabira<br>
+      Mera Maan</p>
+        <div class="line1">
+          _________________________________________________________________________
+         </div>
+          <div class="line2">
+          <b>__________________________________________</b>
+          </div>
+
+       <img src="C:\wamp64\www\final\forward.png"  class="forward1" width="25px" height="25px">
+       <img src="C:\wamp64\www\final\Pause-modified.png"  class="pause" width="26px" height="26px">
+       <img src="C:\wamp64\www\final\forward.png"  class="forward2" width="25px" height="25px">
+
+      <a href="http://web/bartist.php"><button class="btn"><i class="fa fa-download"></i> BOOK</button></a>
+  </div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <div class="band1a"><img src="C:\wamp64\www\final\artist2.png"   width="260px" height="260px">
+  </div>
+     <div class="name1"><h2>Veronica Maloney</h2>
+          <p> English, Hindi<br>
+         Tu tu hai vahi<br>
+         Jiya jiya re<br>
+         Kabira<br>
+         Girls like You<br>
+         Lean on</p>
+           <div class="line1">
+             _________________________________________________________________________
+            </div>
+             <div class="line2">
+             <b>__________________________________________</b>
+             </div>
+ 
+          <img src="C:\wamp64\www\final\forward.png"  class="forward1" width="25px" height="25px">
+          <img src="C:\wamp64\www\final\Pause-modified.png"  class="pause" width="26px" height="26px">
+          <img src="C:\wamp64\www\final\forward.png"  class="forward2" width="25px" height="25px">
+ 
+         <a href="http://web/bartist.php"><button class="btn"><i class="fa fa-download"></i> BOOK</button></a>
+     </div>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <div class="band1a"><img src="C:\wamp64\www\final\artist3.png"   width="260px" height="260px">
+  </div>
+     <div class="name1"><h2>Kabir & Vicky</h2>
+          <p>Hindi,English, Goan<br>
+         Goan masala<br>
+         Kaise Hua<br>
+         Tum ho tho<br>
+         Sinbad the Sailor<br>
+         Kya mujhe pyaar hai</p>
+           <div class="line1">
+             _________________________________________________________________________
+            </div>
+             <div class="line2">
+             <b>__________________________________________</b>
+             </div>
+ 
+          <img src="C:\wamp64\www\final\forward.png"  class="forward1" width="25px" height="25px">
+          <img src="C:\wamp64\www\final\Pause-modified.png"  class="pause" width="26px" height="26px">
+          <img src="C:\wamp64\www\final\forward.png"  class="forward2" width="25px" height="25px">
+ 
+         <a href="http://web/bartist.php"><button class="btn"><i class="fa fa-download"></i> BOOK</button></a>
+     </div>
+</div>
+
+<div id="pune" class="tabcontent">
+  <div class="band1a"><img src="C:\wamp64\www\final\artist4.png"   width="260px" height="260px">
+  </div>
+     <div class="name1"><h1>Sabastian Radu</h1>
+          <p> English, Old Hindi <br>
+         Tere darr per sanam<br>
+         Yeh shaam mastani<br>
+         I want It that way<br>
+         Perfect</p>
+           <div class="line1">
+             _________________________________________________________________________
+            </div>
+             <div class="line2">
+             <b>__________________________________________</b>
+             </div>
+ 
+          <img src="C:\wamp64\www\final\forward.png"  class="forward1" width="25px" height="25px">
+          <img src="C:\wamp64\www\final\Pause-modified.png"  class="pause" width="26px" height="26px">
+          <img src="C:\wamp64\www\final\forward.png"  class="forward2" width="25px" height="25px">
+ 
+         <a href="http://web/bartist.php"><button class="btn"><i class="fa fa-download"></i> BOOK</button></a>
+     </div>
+</div>
+
+<div id="mumbai" class="tabcontent">
+  <div class="band1a"><img src="C:\wamp64\www\final\artist5.png"   width="260px" height="260px">
+  </div>
+     <div class="name1"><h2>G & G (Gauri & Gautam)</h2>
+          <p>Bollywood,English<br>
+         Soniyo<br>
+         Zara sa dil<br>
+         Kahi tho<br>
+         Escape<br>
+         Heartbeat</p>
+           <div class="line1">
+             _________________________________________________________________________
+            </div>
+             <div class="line2">
+             <b>__________________________________________</b>
+             </div>
+ 
+          <img src="C:\wamp64\www\final\forward.png"  class="forward1" width="25px" height="25px">
+          <img src="C:\wamp64\www\final\Pause-modified.png"  class="pause" width="26px" height="26px">
+          <img src="C:\wamp64\www\final\forward.png"  class="forward2" width="25px" height="25px">
+ 
+         <a href="http://web/bartist.php"><button class="btn"><i class="fa fa-download"></i> BOOK</button></a>
+     </div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+  tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+  tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(cityName).style.display = "block";
+evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+  </body>
+</html>
